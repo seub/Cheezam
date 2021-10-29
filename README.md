@@ -1,2 +1,2 @@
-# Fromage
-French cheese recognizer
+# Cheezam
+Cheese recognizer
