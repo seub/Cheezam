@@ -1,0 +1,7 @@
+Connect to HITS cluster by ssh: two options
+0. Copy the private key "hits-cluster" (from Dropbox/Info/Misc/ssh_keys) into ~/.ssh_keys
+1. ssh loustabe@cascade-login
+(Alternatively, ssh -i /path/to/hits-cluster loustabe@cascade-login)
+
+Sync files:
+rsync -avh jobs/ loustabe@cascade-login:~/jobs/

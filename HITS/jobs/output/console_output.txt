@@ -1,0 +1,7 @@
+The data_dir is: /home/brice/.keras/datasets/cheese_photos
+Found 3619 jpg and jpeg images.
+Found 3622 files belonging to 15 classes.
+Using 3441 files for training.
+Found 3622 files belonging to 15 classes.
+Using 181 files for validation.
+Class names: ["Bleu d'Auvergne", 'Brie de Meaux', 'Brie de Melun', 'Camembert de Normandie', 'Cantal', 'Comte', 'Emmenthal de Savoie', "Fourme d'Ambert", 'Fourme de Montbrison', 'Mimolette', 'Morbier', 'Ossau-Iraty', 'Rocamadour', 'Roquefort', 'Saint-Nectaire']
