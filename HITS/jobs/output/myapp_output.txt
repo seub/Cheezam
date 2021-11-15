@@ -1,0 +1,12 @@
+This output was generated at 2021-11-15 21:29:47.157565+00:00 UTC
+
+The data_dir is: /home/brice/.keras/datasets/cheese_photos
+Found 3622 files belonging to 15 classes.
+Using 3441 files for training.
+Found 3622 files belonging to 15 classes.
+Using 181 files for validation.
+Class names: ["Bleu d'Auvergne", 'Brie de Meaux', 'Brie de Melun', 'Camembert de Normandie', 'Cantal', 'Comte', 'Emmenthal de Savoie', "Fourme d'Ambert", 'Fourme de Montbrison', 'Mimolette', 'Morbier', 'Ossau-Iraty', 'Rocamadour', 'Roquefort', 'Saint-Nectaire']
+
+Dataset configured for performance.
+Created data augmentation layer.
+Dataset sample written to output/data_sample.png.
