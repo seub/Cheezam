@@ -1,0 +1,35 @@
+This output was generated at 2021-11-18 07:18:14.172533+00:00 UTC
+
+The data_dir is: /home/loustabe/.keras/datasets/cheese_photos_easy
+Found 1869 files belonging to 7 classes.
+Using 1683 files for training.
+Found 1869 files belonging to 7 classes.
+Using 186 files for validation.
+Class names: ['Camembert de Normandie', 'Cantal', 'Emmenthal de Savoie', 'Mimolette', 'Morbier', 'Rocamadour', 'Roquefort']
+
+Dataset configured for performance.
+Created data augmentation layer.
+Dataset sample written to output/data_sample.png.
+
+Pre-trained MobileV2 model imported from Keras.
+Added two dense layers to model.
+Model: "sequential_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ mobilenetv2_1.00_224 (Funct  (None, 1280)             2257984   
+ ional)                                                          
+                                                                 
+ dense (Dense)               (None, 512)               655872    
+                                                                 
+ dense_1 (Dense)             (None, 7)                 3591      
+                                                                 
+=================================================================
+Total params: 2,917,447
+Trainable params: 659,463
+Non-trainable params: 2,257,984
+_________________________________________________________________
+Total time spent training: 90.21 seconds
+Number of epochs: 15
+Final training accuracy: 0.9786096215248108
+Final validation accuracy: 0.6236559152603149

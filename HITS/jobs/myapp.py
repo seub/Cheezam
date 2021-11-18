@@ -13,7 +13,6 @@ from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
 
-
 # Initialize log
 print(f'This output was generated at {datetime.now(timezone.utc)} UTC\n')
 
@@ -142,13 +141,16 @@ class timecallback(tf.keras.callbacks.Callback):
     plt.savefig('output/epochs_time.png')
 
 # Train model
-epochs = 10
+epochs = 15
 model_path = pathlib.Path.home() / '.keras/models/MobileV2'
 reset = True
 if reset==False:
   assert model_path.is_dir()
+time_begin = time.perf_counter()
 timetaken = timecallback()
-history = model.fit(train_ds, validation_data=val_ds, epochs=epochs, callbacks=[timetaken])
+history = model.fit(train_ds, validation_data=val_ds, epochs=epochs, verbose=0, callbacks=[timetaken])
+time_end = time.perf_counter()
+print("Total time spent training: {:.2f} seconds".format(time_end-time_begin))
 training_history = update_history(reset=reset, history=history, model_path=model_path, epochs=epochs)
 visualize_training(training_history)
 print(f"Number of epochs: {epochs}")
